@@ -56,7 +56,7 @@ int main()
 
 }
 */
-/*Punto 4, Promedio de aprobacion
+Punto 4, Promedio de aprobacion
 
 int main()
  {
@@ -105,5 +105,5 @@ int main()
     return 0;
 
 }
-*/
+
 
