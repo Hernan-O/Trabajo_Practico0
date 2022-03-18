@@ -7,11 +7,12 @@ int main () {
    float ingreso;
    printf("Ingrese el monto \n");
    scanf ("%f", &ingreso);
-   printf("El retorno de un inversion a1 mes es de %f \n", (ingreso * 1.02));
-   printf("toque cualquier boton para salir!");
-   scanf ("%d");
 
-return 0;
+   printf("El retorno de un inversion a1 mes es de %f \n", (ingreso * 1.02));
+   printf("toque cualquier boton para salir!");scanf ("%d");
+
+
+   return 0;
 }
 
 
@@ -164,7 +165,7 @@ int main()
 {
  int eleccion=0, contador=0, eleccion2=0;
 
-  printf("el programa contara del numero mas pequeño al mas alto!\n");
+  printf("el programa contara del numero mas pequeï¿½o al mas alto!\n");
   printf("elija un numero ");
   scanf("%d", &eleccion);
   printf("elija otro numero ");
@@ -266,7 +267,8 @@ int main()
     return 0;
     }
 
-***********************PUNTO 11 Promedio 7 notas*********************/
+***********************PUNTO 11 Promedio 7 notas*********************
+
 
 int main()
     {
@@ -290,4 +292,120 @@ int main()
     printf("su promedio es: %f", nota1/7);
     }
 
-//***********************PUNTO 12 10 numeros y sus cubos/cuartas ****************************
+***********************PUNTO 12 10 numeros y sus cubos/cuartas ****************************
+*
+
+int main()
+    {
+        float num1,num3,num4;
+        int num2;
+
+        printf("este algoritmo muestra el cubo y la cuarta de el numero que elijas");
+
+       for(int num2=1 ; num2<=10 ; num2++)
+        {
+         printf("\n elija un numero\n");
+         scanf("%f", &num1);
+
+         num3=num1 * num1 * num1;
+
+         num4=num3 * num1;
+
+         printf("su cubo es: %f\n", num3);
+         printf("su cuarta es: %f\n", num4);
+
+         }
+
+    return 0;
+    }
+********************************PUNTO 13 Imprimir solo los positivos********************
+int main()
+    {
+    float num,num2;
+
+        printf("Ingrese 10 numeros, solo se imprimiran los positivos\n");
+        for(num2=0;num2<=10;num2++)
+
+            {
+             printf("Ingrese el numero: ");
+             scanf("%f", &num);
+
+                if (num>=-1){
+                    printf("%f\n", num);
+
+                }
+
+                else
+                    num=0;
+            }
+    return 0;
+    }
+/********************************PUNTO 14 NEGATIVO A POSITIVO!*************************
+
+int main()
+    {
+        float pos,quince;
+        printf("convierta sus numeros de negativo a positivo!\n");
+       for (quince=1;quince<=15;quince++)
+        {
+        printf("Ingrese el numero negativo\n");
+        scanf("%f" ,&pos);
+        printf("El numero pasado a positivo es: %f\n", fabs(pos));
+        }
+
+
+return 0;
+}
+
+*******************************PUNTO 15 Calificaciones 40 alumnos*************************/
+
+int main()
+    {
+        float alu,nota,prom = 0,baj = 10;
+
+        printf("Luego de ingresar la nota de 40 alumnos esto le dira el promedio del grupo y la nota mas baja\n\n");
+
+        for(alu=1;alu<=40;alu++)
+            {
+            printf("ingrese la nota: ");
+            scanf("%f", &nota);
+
+                if(nota>10)
+                {
+                    printf("nota maxima 10.\n");
+                    return 0;
+                }
+                else
+                    if (nota<baj)
+                     {
+                        baj=nota;
+                        prom=prom+nota;
+                     }
+                    else
+                        prom= prom + nota;
+                }
+
+                 printf("El promedio de los alumnos es: %f\n\n" , prom/40);
+                 printf("La nota mas baja es %f", baj);
+
+    return 0;
+    }
+
+/*******************************PUNTO 16 TABLA DEL NUMERO!****************************
+
+
+int main()
+    {
+    int a,b,c;
+
+    printf("inserte un numero y le mostraremos la tabla de multiplicar del mismo \n");
+    scanf("%d",&a);
+
+    for(b=1;b<=10;b++)
+    {
+     c=a*b;
+     printf("%d x %d = %d \n",a,b,c);
+    }
+ return 0;
+}
+*/
