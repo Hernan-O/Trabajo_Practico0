@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//*************************Trabajo practico Guia inicial, Navarra Hernán*********************
 //************************* Punto 1, Monto invertido********************
 
 int main()
