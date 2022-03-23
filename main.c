@@ -293,7 +293,7 @@ int main()
                     Nota1= Nota1+Nota2;
 
                 }
-            printf("su promedio es: %f", nota1/7);
+            printf("su promedio es: %f", Nota1/7);
 
         return 0;
         break;
